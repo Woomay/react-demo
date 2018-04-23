@@ -36,7 +36,7 @@ class PrimaryLayout extends React.Component {
     render() {
         const {match} = this.props
         return (
-            <Layout>
+            <Layout style={{ minHeight: '100vh' }}>
                 <Sider
                     breakpoint='lg'
                     trigger={null}

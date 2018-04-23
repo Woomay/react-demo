@@ -178,3 +178,13 @@ html {
       font-size: 24px;
       text-align: center;
   }
+  .login-form {
+    width:300px;
+    height:300px;
+  }
+  .login-form-button{
+    width: 100%;
+  }
+  .register-form{
+    width:460px;
+  }
