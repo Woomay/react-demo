@@ -36,7 +36,8 @@ class Login extends React.Component {
     render() {
         const { getFieldDecorator } = this.props.form;
         return (
-            <Form onSubmit={this.handleSubmit} className="login-form">
+            <div className="login-wrapper">
+                <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>  
                     {getFieldDecorator('username', {
                         rules:[{required: true,message: 'please input your Username!'},],
@@ -65,6 +66,8 @@ class Login extends React.Component {
                     Or <Link to="/auth/register">register now!</Link>
                 </FormItem>
             </Form>
+            </div>
+            
         );
     }
 }

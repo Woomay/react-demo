@@ -15,7 +15,7 @@ html {
   
   .primary-layout,
   .unauthorized-layout {
-    margin: 1em;
+    /* margin: 1em; */
   }
   
   h1 {
@@ -111,47 +111,6 @@ html {
     flex: 1;
     margin-left: 2em;
   }
-  
-  .mock-browser {
-    background-color: #eee;
-    border-bottom: 1px solid #ccc;
-    padding: 0.3em;
-    font: 14pt Arial;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  .mock-browser .path {
-    margin-left: 0.5em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 0.5em;
-    -ms-flex: 1;
-    flex: 1;
-    display: -ms-flexbox;
-    display: flex;
-    color: #999;
-    border-radius: 3px;
-  }
-  
-  .mock-browser .path>div:last-child {
-    -ms-flex: 1;
-    flex: 1;
-  }
-  
-  .mock-browser .path input {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 1em;
-    padding: 0;
-    outline: none;
-  }
-  
-  .mock-browser .path input:focus {
-    color: blue;
-  }
 
 /* antd.css */
 #components-layout-demo-custom-trigger .trigger {
@@ -171,6 +130,10 @@ html {
     background: rgba(255,255,255,.2);
     margin: 16px;
   }
+  body{
+      margin:0;
+      padding: 0;
+  }
   .logo{
       height:64px;
       line-height: 62px;
@@ -178,13 +141,44 @@ html {
       font-size: 24px;
       text-align: center;
   }
+  /* loginPage css */
+  .login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+  }
   .login-form {
-    width:300px;
-    height:300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    max-width: 300px;
   }
   .login-form-button{
-    width: 100%;
+     width: 100%;
+  }
+  .login-form-forgot{
+      float: right;
+  }
+  /* registerPage css */
+  .register-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100vw;
+      height: 100vh;
   }
   .register-form{
-    width:460px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    max-width: 520px;
+  }
+  .register-form-submit{
+      width:100%;
   }

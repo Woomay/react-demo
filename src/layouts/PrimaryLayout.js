@@ -65,8 +65,10 @@ class PrimaryLayout extends React.Component {
                             className="trigger"
                             type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
                             onClick={this.handleToggle}
+                            style={{fontSize: 24}}
                         />
                         <PrimaryHeader />
+                        <Icon type="team" style={{fontSize: 24}} />
                     </Header>
                     <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
                         <main>
@@ -79,7 +81,7 @@ class PrimaryLayout extends React.Component {
                         </main>
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>
-                        Ant Design ©2016 Created by Ant UED
+                        basic react demo by hyx
                     </Footer>
                 </Layout>
             </Layout>
