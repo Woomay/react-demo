@@ -8,7 +8,7 @@ const AppHomePage = ({history}) => (
         <button onClick={() => {
             logout()
                 .then(() => {history.push('/')})
-                message.error('即将前往登录页面',3)      
+                message.error('即将前往登录页面',1)      
         }}
         >
             Logout

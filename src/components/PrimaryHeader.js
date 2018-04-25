@@ -8,6 +8,7 @@ const PrimaryHeader = () => (
             <NavLink to="/app" exact activeClassName="active">Home</NavLink>
             <NavLink to="/app/users" activeClassName="active">Users</NavLink>
             <NavLink to="/app/products" activeClassName="active">Products</NavLink>
+            <NavLink to="/app/order" activeClassName="active">Order</NavLink>
         </nav>
     </header>
 )

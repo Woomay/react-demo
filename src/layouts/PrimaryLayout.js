@@ -2,6 +2,7 @@ import React from 'react'
 import {Switch,Route,Redirect,NavLink} from 'react-router-dom'
 import PrimaryHeader from '../components/PrimaryHeader'
 import AppHomePage from '../pages/AppHomePage'
+import OrderPage from '../pages/OrderPage'
 import UserSubLayout from './UserSubLayout'
 import ProductSubLayout from './ProductSubLayout'
 
@@ -9,21 +10,6 @@ import {Layout,Menu,Icon} from 'antd'
 
 const {Header,Sider,Content,Footer} = Layout
 
-//sub Layouts
-
-// const PrimaryLayout = ({match}) => (
-//     <div className="primary-layout">
-//         <PrimaryHeader />
-//         <main>
-//             <Switch>
-//                 <Route path={`${match.path}`} exact component={AppHomePage} />
-//                 <Route path={`${match.path}/users`} component={UserSubLayout} />
-//                 <Route path={`${match.path}/products`} component={ProductSubLayout} />
-//                 <Redirect to={`${match.url}`} />
-//             </Switch>
-//         </main>
-//     </div>
-// )
 class PrimaryLayout extends React.Component {
     state = {
         collapsed: false
@@ -51,11 +37,15 @@ class PrimaryLayout extends React.Component {
                         </Menu.Item>
                         <Menu.Item key="2">
                             <Icon type="video-camera" />
-                            <NavLink to="/app/users" activeClassName="active">Users</NavLink>
+                            <span><NavLink to="/app/users" activeClassName="active">Users</NavLink></span>
                         </Menu.Item>
                         <Menu.Item key="3">
                             <Icon type="upload" />
                             <span><NavLink to="/app/products" activeClassName="active">Products</NavLink></span>
+                        </Menu.Item>
+                        <Menu.Item key="4">
+                            <Icon type="upload" />
+                            <span><NavLink to="/app/order" activeClassName="active">Order</NavLink></span>
                         </Menu.Item>
                     </Menu>
                 </Sider>
@@ -76,6 +66,7 @@ class PrimaryLayout extends React.Component {
                                 <Route path={`${match.path}`} exact component={AppHomePage} />
                                 <Route path={`${match.path}/users`} component={UserSubLayout} />
                                 <Route path={`${match.path}/products`} component={ProductSubLayout} />
+                                <Route path={`${match.path}/order`} component={OrderPage} />
                                 <Redirect to={`${match.url}`} />
                             </Switch>
                         </main>
